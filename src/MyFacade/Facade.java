@@ -39,6 +39,7 @@ public class Facade {
             acc = cust.getAccount(accNo);
             System.out.println("Account Number: " + acc.getAccountNumber() + " has " + acc.getBalance());
         }
+
         public void getBanCustomer(String custName){
             custl.stream().filter(cust -> (cust.getCustomerName().equals(custName))).map(cust -> {
             System.out.println("Name = " + cust.getCustomerName());
